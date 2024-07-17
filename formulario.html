@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulario</title>
+
+</head>
+<header>   
+    <h1>HORIZONT  	&#8721</h1>
+    <nav>
+        <ul>
+            <li> <a href="#vacaciones">Vacaciones</a></li>
+            <li><a href="#destinos">Destinos</a></li>
+            <li><a href="#chollos">chollos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+     </nav>
+    </header>
+
+    <div id="container">
+        <form action="mailto:" method="get" enctype="text/plain">
+            
+            <h3>FORMULARIO DE CONTACTO</h3>
+            <p><label for="destino">DESTINO*</label><select name="destino" id="destino" required><option value="">Please Select</option><option value="espana">España</option><option value="italia">Italia</option><option value="francia">Francia</option><option value="holanda">Holanda</option><option value="reinounido"></option>Reino Unido</select></p>
+
+            <p><label for="salida">FECHA DE SALIDA*</label> <input type="date" required></p>
+            <p><input type="radio">Soy flexible con la fecha</p>
+            <p><label for="numero">NUMERO DE ADULTOS*</label>
+                <select name="numero" id="numero" required>
+                    <option value="0">Please Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <p><input type="radio" id="nino" name="niño"><label for="nino">Viajamos con niños</label></p>
+            </p>
+            <table>
+                <tr>
+                    <td>EDAD ADULTOS</td>
+                    <td><input type="checkbox" name="edad" id="edad" required><label for="edad">18-30</label></td>
+                    <td><input type="checkbox" name="edad" id="edad"><label for="edad">31-50</label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="edad" id="edad"><label for="edad">51-64</label></td>
+                    <td><input type="checkbox" name="edad" id="edad"><label for="edad">65+</label></td>
+                </tr>
+            </table>
+            <p>TIPO DE VIAJE    <input type="radio" name="viaje" id="viaje"><label for="viaje">Viaje programado</label></p>
+
+            <p class="parr">ACTIVIDADES O TOUR DIARIOS PUEDEN SER COMPARTIDO O PRIVADO</p>
+            <p><input type="checkbox" name="cruceros" id="cruceros"><label for="cruceros">Cruceros en galapagos</label></p>
+            <p><input type="checkbox" name="tours" id="tours"><label for="tours">Tours combinados, hotel-yate</label></p>
+            <p><input type="checkbox" name="empaquetados" id="empaquetados"><label for="empaquetados">Tours empaquetados</label></p>
+            <p class="parr">UNASE A UN TOUR PROGRAMADO, VIAJE EN GRUPO DE VARIOS DIAS</p>
+            <p><input type="radio" name="guia" id="guia"><label for="guia">Me gustaria que mi Especialista de viaje me sugiera en base a mis intereses</label></p>
+            <p class="parr">TIPO DE ACOMODACION*</p>
+            <p><input type="radio" name="acomodacion" id="acomodacion" value="5est"><label for="acomodacion">5 estrellas</label><input type="radio" name="acomodacion" id="acomodacion" value="4est"><label for="acomodacion">4 estrellas</label>
+                <input type="radio" name="acomodacion" id="acomodacion" value="3est"><label for="acomodacion">3 estrellas</label></p>
+
+                <table>
+                    <tr>
+                        <td><p class="parr">OTROS SERVICIOS</p></td>
+                        <td><input type="checkbox" name="actividades" id="actividades"><label for="actividades">Actividades, guias, informacion</label></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="checkbox" name="transporte" id="transporte"><label for="transporte">Transporte</label></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><p class="parr">PRESUPUESTO POR <br>PERSONA $</p></td>
+                        <td><select name="presupuesto" id="presupuesto"><option value="0">Please Select</option><option value="50">Entre 0 y 50 &euro;</option><option value="50">Entre 50 &euro; y 100 &euro;</option><option value="50">Mas de 100 &euro;</option></select></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><p class="parr">¿ES EL PRESUPUESTO <br>FLEXIBLE</p></td>
+                        <td><input type="radio" name="maximo" id="maximo" value="maximo"><label for="maximo">El descrito es mi maximo permitido</label></td>
+                        
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="radio" name="maximo" id="flexible" value="flexible"><label for="flexible">Flexible: Puedo incrementar 20%, si se necesita</label></td>
+                        
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="radio" name="maximo" id="flexible" value="muyflexible"><label for="flexible">Muy flexible. No se enfoque en un presupuesto especifico</label></td>
+                        
+                    </tr>
+                </table>
+                <p class="parr">¿CUAL ES EL VIAJE QUE QUISIERAS?</p>
+            <textarea name="descripcion" id="" cols="80" rows="10"></textarea>
+            <table>
+                <tr>
+                    <td> <p class="parr"><label for="nombre">NOMBRE Y APELLIDO*</label></p></td>
+                    <td><input type="text" name="nombre" id="nombre" required></td>
+                </tr>
+                <tr>
+                    <td> <p class="parr"><label for="email">E-MAIL* </label></p></td>
+                    <td><p><input type="email" name="email " id="email" required></p></td>
+                </tr>
+                <tr>
+                    <td><p class="parr"><label for="telef">NUMERO TELEFONICO</label></p></td>
+                    <td><p><input type="tel"></p></td>
+                </tr>
+                <tr>
+                    <td><p class="parr"><label for="ciudad">CIUDAD</label></p></td>
+                    <td><p><input type="text" name="ciudad"></p></td>
+                </tr>
+                <tr>
+                    <td><p class="parr"><label for="pais">PAIS DE RESIDENCIA*</label></p></td>
+                    <td><p><input type="tex" name="pais" id="pais" required></p></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
+            <p class="parr">Estoy de acuerdo con los terminos de Uso y Poiticas de Privacidad*</p>
+            <p><input type="checkbox" name="acuerdo" id="acuerdo"><label for="acuerdo">Estoy de acuerdo</label></p>
+            <button type="submit">
+                Solicitar mi viaje
+            </button>
+
+           
+           
+        </form>
+    </div>
+
+</html>
